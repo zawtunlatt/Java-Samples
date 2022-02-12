@@ -1,0 +1,61 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.jsamples</groupId>
+		<artifactId>java-root</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
+	<artifactId>core-java</artifactId>
+	<packaging>pom</packaging>
+	<name>Core Java Module</name>
+	<modules>
+		<module>2022-01-22_BasicSyntax</module>
+		<module>2022-01-22_Arrays</module>
+		<module>2022-01-22_Variables</module>
+		<module>2022-01-23_DataTypes</module>
+		<module>2022-01-25_Operators</module>
+		<module>2022-02-10_Looping</module>
+		<module>2022-02-11_WrapperClasses</module>
+	</modules>
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>org.junit.jupiter</groupId>
+				<artifactId>junit-jupiter</artifactId>
+				<version>${junit-jupiter.version}</version>
+				<scope>test</scope>
+			</dependency>
+			<dependency>
+				<groupId>org.junit.vintage</groupId>
+				<artifactId>junit-vintage-engine</artifactId>
+				<version>${junit-jupiter.version}</version>
+				<scope>test</scope>
+			</dependency>
+			<!-- <dependency> -->
+			<!-- <groupId>javax.xml.bind</groupId> -->
+			<!-- <artifactId>jaxb-api</artifactId> -->
+			<!-- <version>2.3.1</version> -->
+			<!-- </dependency> -->
+			<dependency>
+				<groupId>javax.annotation</groupId>
+				<artifactId>javax.annotation-api</artifactId>
+				<version>1.3.2</version>
+			</dependency>
+			<!-- API, java.xml.bind module -->
+			<dependency>
+				<groupId>jakarta.xml.bind</groupId>
+				<artifactId>jakarta.xml.bind-api</artifactId>
+				<version>2.3.2</version>
+			</dependency>
+
+			<!-- Runtime, com.sun.xml.bind module -->
+			<dependency>
+				<groupId>org.glassfish.jaxb</groupId>
+				<artifactId>jaxb-runtime</artifactId>
+				<version>2.3.2</version>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+</project>
