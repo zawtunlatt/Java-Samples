@@ -18,6 +18,7 @@
 		<module>2022-01-25_Operators</module>
 		<module>2022-02-10_Looping</module>
 		<module>2022-02-11_WrapperClasses</module>
+		<module>2022-02-20_String</module>
 	</modules>
 	<dependencyManagement>
 		<dependencies>
